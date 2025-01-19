@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}MediLocker AI | MediLocker{% endblock %}</title>
+        <link rel="icon" href="">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {% include 'web_portal/navbar.html' %}
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        
+        {% include 'web_portal/footer.html' %}
+    </body>
+</html>

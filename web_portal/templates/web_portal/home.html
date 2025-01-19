@@ -1,0 +1,151 @@
+{% extends 'web_portal/base.html' %}
+{% load static %}
+
+{% block title %}MediLocker AI - Home | MediLocker{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-[#1D1E20]">
+    <div class="max-w-7xl mx-auto px-4 py-20 text-center">
+        <h2 class="text-5xl font-bold text-white">Welcome, MediLocker AI</h2>
+        <div class="mt-6 mb-9 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center items-center">
+            <a href="#services" class="bg-[#0F1746] border-2 border-white text-white py-2 px-6 text-sm sm:text-md lg:text-lg rounded-full hover:bg-indigo-400">
+                Try Our Services &nearrow;
+            </a>
+            <a href="#" class="bg-transparent border-2 border-white text-white py-2 px-6 text-sm sm:text-md lg:text-lg rounded-full hover:bg-indigo-400">
+                Learn About MediLocker &nearrow;
+            </a>
+        </div>
+        <p class="mt-6 lg:text-lg sm:text-md text-gray-400 px-10">
+            Welcome to the MediLocker AI Portal – your gateway to cutting-edge medical tools. Explore the MAI Chatbot for instant medical guidance and 
+            the MAI Report Reader for seamless health report analysis. More innovative solutions coming soon!
+        </p>
+    </div>  
+</section>
+
+<!-- Services Section -->
+<section id="services" class="bg-black p-20">
+    <div class="max-w-7xl mx-auto lg:px-4 md:px-2 sm:px-1 text-center">
+        <h2 class="text-4xl font-bold text-white mb-8">Our Services</h2>
+        <p class="text-gray-400 mb-12">
+            Discover a range of cutting-edge services designed to enhance your healthcare experience.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- MAI Chatbot Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl w-full">
+                <img src="{% static 'web_portal/images/MAIChatbot.png' %}" alt="MAI Chatbot" class="w-full h-40 sm:h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-[#0F1746]">MAI Chatbot</h3>
+                    <p class="text-gray-400 mt-4 line-clamp-3">
+                        Interact with our intelligent chatbot to get real-time medical guidance and assistance with healthcare queries. It's designed to make healthcare more accessible and personalized.
+                    </p>
+                    <a href="#" class="mt-6 inline-block bg-[#0F1746] text-white py-2 px-6 rounded-full text-md hover:bg-indigo-400">
+                        Try Now &nearrow;
+                    </a>
+                    <a href="#" class="mt-6 inline-block bg-transparent text-[#0F1746] border-2 border-[#0F1746] py-2 px-6 rounded-full text-md hover:bg-indigo-400">
+                        Learn More &nearrow;
+                    </a>
+                </div>
+            </div>
+
+            <!-- MAI Report Reader Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl w-full">
+                <img src="{% static 'web_portal/images/ReportReader.png' %}" alt="MAI Report Reader" class="w-full h-40 sm:h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-[#0F1746]">MAI Report Reader</h3>
+                    <p class="text-gray-400 mt-4 line-clamp-3">
+                        Upload and analyze your medical reports with our advanced AI. Get quick insights and understand complex medical data with ease and clarity.
+                    </p>
+                    <a href="#" class="mt-6 inline-block bg-[#0F1746] text-white py-2 px-6 rounded-full text-md hover:bg-indigo-400">
+                        Try Now &nearrow;
+                    </a>
+                    <a href="#" class="mt-6 inline-block bg-transparent text-[#0F1746] border-2 border-[#0F1746] py-2 px-6 rounded-full text-md hover:bg-indigo-400">
+                        Learn More &nearrow;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feedback Form Section -->
+<section id="feedback" class="bg-[#1D1E20] p-20">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-white mb-8">We Value Your Feedback</h2>
+        <p class="text-gray-400 mb-12">
+            Your insights help us improve our services. Please take a moment to share your thoughts with us.
+        </p>
+        <form action="#" method="POST" class="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto">
+            <!-- CSRF Token -->
+            {% csrf_token %}
+            
+            <!-- Name Field -->
+            <div class="mb-6">
+                <label for="name" class="block text-[#0F1746] font-semibold text-lg mb-2">Your Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+                    placeholder="Enter your name" 
+                    required
+                >
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-6">
+                <label for="email" class="block text-[#0F1746] font-semibold text-lg mb-2">Your Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+                    placeholder="Enter your email address" 
+                    required
+                >
+            </div>
+
+            <!-- Service Dropdown Field -->
+            <div class="mb-6">
+                <label for="service" class="block text-[#0F1746] font-semibold text-lg mb-2">Select a Service</label>
+                <select 
+                    id="service" 
+                    name="service" 
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+                    required
+                >
+                    <option value="" disabled selected>Select a service...</option>
+                    <option value="web_portal">Web Portal</option>
+                    <option value="chatbot">MAI Chatbot</option>
+                    <option value="report_reader">MAI Report Reader</option>
+                </select>
+            </div>
+
+            <!-- Feedback Field -->
+            <div class="mb-6">
+                <label for="feedback" class="block text-[#0F1746] font-semibold text-lg mb-2">Your Feedback</label>
+                <textarea 
+                    id="feedback" 
+                    name="feedback" 
+                    rows="6" 
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" 
+                    placeholder="Share your feedback here..." 
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button 
+                    type="submit" 
+                    class="bg-[#0F1746] text-white py-3 px-6 rounded-full text-lg hover:bg-indigo-400 transition duration-300"
+                >
+                    Submit Feedback
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
