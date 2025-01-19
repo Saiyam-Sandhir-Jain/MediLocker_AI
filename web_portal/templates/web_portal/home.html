@@ -13,7 +13,7 @@
             <a href="#services" class="bg-[#0F1746] border-2 border-white text-white py-2 px-6 text-sm sm:text-md lg:text-lg rounded-full hover:bg-indigo-400">
                 Try Our Services &nearrow;
             </a>
-            <a href="#" class="bg-transparent border-2 border-white text-white py-2 px-6 text-sm sm:text-md lg:text-lg rounded-full hover:bg-indigo-400">
+            <a href="{% url 'about_us' %}" class="bg-transparent border-2 border-white text-white py-2 px-6 text-sm sm:text-md lg:text-lg rounded-full hover:bg-indigo-400">
                 Learn About MediLocker &nearrow;
             </a>
         </div>
@@ -25,7 +25,7 @@
 </section>
 
 <!-- Services Section -->
-<section id="services" class="bg-black p-20">
+<section id="services" class="bg-black pt-20 pb-20 px-10">
     <div class="max-w-7xl mx-auto lg:px-4 md:px-2 sm:px-1 text-center">
         <h2 class="text-4xl font-bold text-white mb-8">Our Services</h2>
         <p class="text-gray-400 mb-12">
@@ -33,10 +33,10 @@
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
             <!-- MAI Chatbot Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl w-full">
+            <div class="bg-white rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 w-full">
                 <img src="{% static 'web_portal/images/MAIChatbot.png' %}" alt="MAI Chatbot" class="w-full h-40 sm:h-56 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-[#0F1746]">MAI Chatbot</h3>
+                    <h3 class="text-3xl font-semibold text-[#0F1746]">MAI Chatbot</h3>
                     <p class="text-gray-400 mt-4 line-clamp-3">
                         Interact with our intelligent chatbot to get real-time medical guidance and assistance with healthcare queries. It's designed to make healthcare more accessible and personalized.
                     </p>
@@ -50,7 +50,7 @@
             </div>
 
             <!-- MAI Report Reader Card -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl w-full">
+            <div class="bg-white rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 w-full">
                 <img src="{% static 'web_portal/images/ReportReader.png' %}" alt="MAI Report Reader" class="w-full h-40 sm:h-56 object-cover">
                 <div class="p-6">
                     <h3 class="text-2xl font-semibold text-[#0F1746]">MAI Report Reader</h3>
@@ -70,13 +70,20 @@
 </section>
 
 <!-- Feedback Form Section -->
-<section id="feedback" class="bg-[#1D1E20] p-20">
+<section id="feedback" class="bg-[#1D1E20] pt-20 pb-20 px-10">
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl font-bold text-white mb-8">We Value Your Feedback</h2>
         <p class="text-gray-400 mb-12">
             Your insights help us improve our services. Please take a moment to share your thoughts with us.
         </p>
-        <form action="#" method="POST" class="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto">
+        {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+        <form action="#" method="POST" class="bg-white rounded-3xl shadow-lg p-8 max-w-3xl mx-auto">
             <!-- CSRF Token -->
             {% csrf_token %}
             

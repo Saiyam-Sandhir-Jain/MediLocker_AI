@@ -1,6 +1,11 @@
 from django import forms
+from .models import Feedback
 
-class FeedbackForm(forms.Form):
+class FeedbackForm(forms.ModelForm):
+    class Meta:
+        model = Feedback
+        fields = ['name', 'email', 'service', 'feedback']
+
     name = forms.CharField(label="Your Name", max_length=100, widget=forms.TextInput(attrs={
         'class': 'form-control',
         'placeholder': 'Enter your name',

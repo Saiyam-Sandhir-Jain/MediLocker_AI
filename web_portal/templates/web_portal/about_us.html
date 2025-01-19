@@ -1,6 +1,7 @@
 {% extends 'web_portal/base.html' %}
+{%load static %}
 
-{% block title %}MediLocker AI - About Us | MediLocker{% endblock %}
+{% block title %}About MediLocker AI | MediLocker{% endblock %}
 
 {% block content %}
 
@@ -8,6 +9,50 @@
 <section class="bg-[#1D1E20]">
     <div class="max-w-7xl mx-auto px-4 py-20 text-center">
         <h2 class="text-5xl font-bold text-white">About Us</h2>
+        <p class="mt-6 text-lg text-gray-400 px-10">
+            We are a team of innovators from <a href="https://vitbhopal.ac.in" class="text-indigo-400 hover:underline" target="_blank">VIT Bhopal University</a>, dedicated to transforming healthcare through cutting-edge AI solutions. Our mission is to create a secure, accessible, and intelligent platform where users can manage, analyze, and share their medical records seamlessly. The <b>MediLocker AI Portal</b> serves as a gateway to our innovative contributions, showcasing our expertise and participation in renowned hackathons, including the prestigious Johns Hopkins University Hackathon.
+        </p>
+    </div>
+</section>
+
+<!-- Meet the Contributors Section -->
+<section class="bg-black bg-black pt-20 pb-20 px-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-white mb-8">Meet the MediLocker Team</h2>
+        <p class="text-gray-400 mb-12">
+            The MediLocker project is powered by a passionate and talented team. Together, we aim to bridge the gap between technology and healthcare for a better future.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+            {% for contributor in contributors %}
+            <div class="text-center">
+                <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                    <img src="{{ contributor.image }}" alt="{{ contributor.name }}" class="w-full h-full object-cover">
+                </div>
+                <p class="mt-4 text-white font-semibold">{{ contributor.name }}</p>
+                <a href="{{ contributor.linkedin }}" target="_blank" class="text-indigo-400 text-sm hover:underline">LinkedIn</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- VIT Bhopal Section -->
+<section class="bg-[#1D1E20] pt-20 pb-20 px-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-white mb-8">VIT Bhopal University</h2>
+        <p class="text-gray-400 mb-12">
+            <a href="https://vitbhopal.ac.in" class="text-indigo-400 hover:underline" target="_blank">VIT Bhopal University</a> is a center of innovation and academic excellence. It fosters creativity and talent across diverse domains, providing a dynamic environment for aspiring individuals to excel and make meaningful contributions. MediLocker AI proudly represents the innovative spirit of VIT Bhopal in leveraging technology for real-world solutions.
+        </p>
+        <div class="flex flex-wrap justify-center space-x-2">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+                <img src="{% static 'web_portal/images/vit1.jpeg' %}" alt="VIT Bhopal 1" class="rounded-lg shadow-lg object-cover w-full">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-6">
+                <img src="{% static 'web_portal/images/vit2.jpeg' %}" alt="VIT Bhopal 2" class="rounded-lg shadow-lg object-cover w-full">
+            </div>
+        </div>
+    </div>
 </section>
 
 {% endblock %}

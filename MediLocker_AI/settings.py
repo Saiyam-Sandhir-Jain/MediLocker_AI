@@ -67,11 +67,14 @@ WSGI_APPLICATION = 'MediLocker_AI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DJANGO_DB_NAME', 'default_db'),
+        'USER': os.getenv('DJANGO_DB_USER', 'default_user'),
+        'PASSWORD': os.getenv('DJANGO_DB_PASSWORD', 'default_password'),
+        'HOST': os.getenv('DJANGO_DB_HOST', 'db'),
+        'PORT': os.getenv('DJANGO_DB_PORT', '5432'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
