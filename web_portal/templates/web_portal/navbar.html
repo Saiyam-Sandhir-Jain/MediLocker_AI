@@ -3,16 +3,17 @@
         <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white">
             <a href="{% url 'home' %}">MediLocker AI</a>
         </h1>
-        
+
         <button 
             id="menu-toggle" 
             class="text-gray-400 text-sm sm:text-base md:text-lg hover:text-white focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6" id="menu-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
         </button>
     </div>
 
+    <!-- Main Navigation Menu -->
     <nav 
         id="menu" 
         class="hidden absolute top-16 right-9 bg-gray-800 text-white rounded-md shadow-lg w-48 py-2 z-50"
@@ -20,21 +21,71 @@
         <a href="{% url 'home' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">Home</a>
         <a href="{% url 'research' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">Research</a>
         <a href="{% url 'about_us' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">About Us</a>
+
+        <!-- Submenu -->
+        <div class="relative group">
+            <button 
+                id="submenu-toggle" 
+                class="block w-full text-left px-4 py-2 text-sm hover:bg-gray-700 flex items-center justify-between focus:outline-none"
+            >
+                Our Services
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 ml-2" id="submenu-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <!-- Submenu Options -->
+            <div 
+                id="submenu" 
+                class="hidden absolute top-full left-0 transform -translate-x-8 bg-gray-700 text-white rounded-md w-48 py-2 z-50"
+                style="box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);"
+            >
+                <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-600">MAI Chatbot</a>
+                <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-600">MAI Report Reader</a>
+            </div>
+        </div>
     </nav>
 </header>
 
 <script>
+    // Toggle Main Menu
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
+    const menuIcon = document.getElementById('menu-icon');
 
     menuToggle.addEventListener('click', (event) => {
         event.stopPropagation();
         menu.classList.toggle('hidden');
+        menuIcon.innerHTML = menu.classList.contains('hidden') 
+            ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />' 
+            : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12l8-8 8 8" />';
     });
 
-    document.addEventListener('click', (event) => {
+    // Close the menu when clicking outside
+    document.addEventListener('click', () => {
         if (!menu.classList.contains('hidden')) {
             menu.classList.add('hidden');
+            menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />';
+        }
+    });
+
+    // Toggle Submenu
+    const submenuToggle = document.getElementById('submenu-toggle');
+    const submenu = document.getElementById('submenu');
+    const submenuIcon = document.getElementById('submenu-icon');
+
+    submenuToggle.addEventListener('click', (event) => {
+        event.stopPropagation();
+        submenu.classList.toggle('hidden');
+        submenuIcon.innerHTML = submenu.classList.contains('hidden') 
+            ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />' 
+            : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12l8-8 8 8" />';
+    });
+
+    // Close submenu when clicking outside
+    document.addEventListener('click', () => {
+        if (!submenu.classList.contains('hidden')) {
+            submenu.classList.add('hidden');
+            submenuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />';
         }
     });
 </script>
