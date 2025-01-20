@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +8,7 @@
         <title>{% block title %}MediLocker AI | MediLocker{% endblock %}</title>
         <link rel="icon" href="">
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{% static 'web_portal/css/styles.css' %}">
     </head>
     <body>
         {% include 'web_portal/navbar.html' %}

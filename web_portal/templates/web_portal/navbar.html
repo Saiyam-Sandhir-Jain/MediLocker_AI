@@ -1,4 +1,4 @@
-<header class="bg-black relative">
+<header class="bg-black relative sticky top-0 z-50">
     <div class="max-w-full mx-auto px-9 py-4 flex justify-between items-center">
         <h1 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white">
             <a href="{% url 'home' %}">MediLocker AI</a>
@@ -19,10 +19,7 @@
         class="hidden absolute top-16 right-9 bg-gray-800 text-white rounded-md shadow-lg w-48 py-2 z-50"
     >
         <a href="{% url 'home' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">Home</a>
-        <a href="{% url 'research' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">Research</a>
-        <a href="{% url 'about_us' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">About Us</a>
-
-        <!-- Submenu -->
+        <!-- Our Services Submenu-->
         <div class="relative group">
             <button 
                 id="submenu-toggle" 
@@ -43,6 +40,8 @@
                 <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-600">MAI Report Reader</a>
             </div>
         </div>
+        <a href="{% url 'research' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">Research</a>
+        <a href="{% url 'about_us' %}" class="block px-4 py-2 text-sm hover:bg-gray-700">About Us</a>
     </nav>
 </header>
 
