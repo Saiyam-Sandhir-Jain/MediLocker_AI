@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}MediLocker AI - Report Analysis{% endblock %}
+
+{% block content %}
+<!-- Form Section -->
+<section>
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg p-8">
+        <h2 class="text-3xl font-bold text-[#0F1746] text-center mb-6">Upload Your Lab Report</h2>
+        <form method="post" enctype="multipart/form-data" action="{% url 'reader' %}">
+            {% csrf_token %}
+            <div class="mb-6">
+                <label class="block text-lg font-semibold text-[#0F1746] mb-2">Upload Your Lab Report (PDF)</label>
+                <input 
+                    type="file" 
+                    name="file" 
+                    class="block w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" 
+                    required>
+            </div>
+            <div class="mb-6">
+                <label class="block text-lg font-semibold text-[#0F1746] mb-2">Select Gender</label>
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="Male" class="mr-2">
+                        <label for="male" class="text-gray-700">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="Female" checked class="mr-2">
+                        <label for="female" class="text-gray-700">Female</label>
+                    </div>
+                </div>
+            </div>
+            <button 
+                type="submit" 
+                class="w-full bg-[#0F1746] text-white py-3 px-6 rounded-full font-semibold text-lg hover:bg-indigo-400 transition">
+                Analyze Report
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- Results Section -->
+{% if result %}
+<section class="bg-[#1D1E20] py-20 px-6">
+    <div class="max-w-4xl mx-auto bg-green-100 rounded-3xl shadow-lg p-8">
+        <h2 class="text-2xl font-bold text-[#0F1746] text-center mb-4">Analysis Results</h2>
+        {% if abnormal_metrics %}
+            <ul class="list-disc list-inside text-left text-gray-700">
+                {% for metric, details in abnormal_metrics.items %}
+                    <li class="mb-2">
+                        <strong>{{ metric }}:</strong> {{ details.value }} 
+                        (Normal Range: {{ details.range.low }} - {{ details.range.high }})
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-lg text-center text-gray-700">All metrics are within the normal range.</p>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+{% endblock %}

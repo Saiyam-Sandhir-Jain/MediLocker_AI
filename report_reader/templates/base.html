@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}MediLocker AI | MediLocker{% endblock %}</title>
+        <link rel="icon" href="">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="{% static 'web_portal/css/styles.css' %}">
+    </head>
+    <body class="min-h-screen flex flex-col">
+        <!-- Navbar -->
+        {% include 'web_portal/navbar.html' %}
+
+        <!-- Main Content -->
+        <main class="flex-grow flex items-center justify-center bg-gradient-to-b from-black to-[#1D1E20] py-20 px-6">
+            {% block content %}{% endblock %}
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <p class="text-sm">© 2025 MediLocker. All rights reserved.</p>
+                <p class="text-xs">Empowering better healthcare with data-driven insights.</p>
+            </div>
+        </footer>
+    </body>
+</html>

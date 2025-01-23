@@ -5,4 +5,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('web_portal.urls')),
     path('web_portal/', include('web_portal.urls')),
+    path('report_reader/', include('report_reader.urls')),
 ]
