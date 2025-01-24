@@ -2,6 +2,9 @@ from django.shortcuts import render
 import pymupdf
 import json
 import re
+from django.templatetags.static import static
+import os
+from django.conf import settings
 
 def extract_text_from_pdf(file_path):
     doc = pymupdf.open(file_path)
@@ -43,9 +46,17 @@ def analyze(request):
                 for chunk in uploaded_file.chunks():
                     f.write(chunk)
             text = extract_text_from_pdf('temp.pdf')
-            metrics = parse_lab_report(text)
-            with open('./reference_ranges.json', 'r') as file:
-                reference_ranges = json.load(file)
-            abnormal_metrics = analyze_results(metrics, reference_ranges, gender)
-            result = True
+
+            # Locate the JSON file in the STATIC_ROOT directory
+            static_file_path = os.path.join(settings.STATIC_ROOT, 'report_reader', 'json', 'reference_ranges.json')
+
+            if os.path.exists(static_file_path):
+                with open(static_file_path, 'r') as file:
+                    reference_ranges = json.load(file)
+
+                metrics = parse_lab_report(text)
+                abnormal_metrics = analyze_results(metrics, reference_ranges, gender)
+                result = True
+            else:
+                raise FileNotFoundError(f"JSON file not found: {static_file_path}")
     return render(request, 'reader.html', {'result': result, 'abnormal_metrics': abnormal_metrics})
