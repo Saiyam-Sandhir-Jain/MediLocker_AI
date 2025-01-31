@@ -1,3 +1,4 @@
 django
 psycopg2-binary
-pymupdf
+pdfplumber
+pypdf2
