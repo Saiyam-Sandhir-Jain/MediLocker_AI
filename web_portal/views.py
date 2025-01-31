@@ -31,3 +31,29 @@ def about_us(request):
     ]
 
     return render(request, 'web_portal/about_us.html', {'contributors': contributors})
+
+def pricing(request):
+    pricing_plans = [
+        {
+            "name": "Basic",
+            "price": "₹0",
+            "features": ["Free to use", "Access to basic features", "Community support"],
+            "button_text": "Get Started",
+            "button_link": "/",
+        },
+        {
+            "name": "Pro",
+            "price": "₹249/month",
+            "features": ["API access", "Priority support", "Advanced analytics"],
+            "button_text": "Subscribe",
+            "button_link": "/subscribe/",  # You can create a subscription view later
+        },
+        {
+            "name": "Enterprise",
+            "price": "Custom",
+            "features": ["Custom API usage", "Dedicated support", "Custom integrations"],
+            "button_text": "Contact Us",
+            "button_link": "/contact/",  # You can create a contact view later
+        },
+    ]
+    return render(request, 'web_portal/pricing.html', {'pricing_plans': pricing_plans})

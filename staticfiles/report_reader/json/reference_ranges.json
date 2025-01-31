@@ -1,1192 +1,372 @@
 {
-    "Hemoglobin": [
-        13.0,
-        17.0
-    ],
-    "Hb": [
-        13.0,17.0
-    ],
-    "Hematocrit": [
-        40.0,
-        50.0
-    ],
-    "Hct": [
-        40.0,
-        50.0
-    ],
-    "Red Blood Cell Count": [
-        4.5,
-        6.0
-    ],
-    "RBC": [
-        4.5,
-        6.0
-    ],
-    "White Blood Cell Count": [
-        4000,
-        11000
-    ],
-    "WBC": [
-        4000,
-        11000
-    ],
-    "Platelet Count": [
-        150000,
-        450000
-    ],
-    "Mean Corpuscular Volume": [
-        80,
-        100
-    ],
-    "MCV": [
-        80,
-        100
-    ],
-    "Mean Corpuscular Hemoglobin": [
-        27,
-        31
-    ],
-"MCH":  [
-        27,
-        31
-],
-    "Mean Corpuscular Hemoglobin Concentration": [
-        32,
-        36
-    ],
-    "MCHC": [
-        32,
-        36
-    ],
-    "Red Cell Distribution Width": [
-        11.5,
-        14.5
-    ],
-    "RDW": [
-        11.5,
-        14.5
-    ],
-    "Neutrophils (%)": [
-        40,
-        70
-    ],
-    "Neutrophils (absolute)": [
-        1500,
-        8000
-    ],
-    "Neutrophils (Abs. Value)": [
-        1500,
-        8000
-    ],
-    "Lymphocytes (%)": [
-        20,
-        40
-    ],
-    "Lymphocytes (absolute)": [
-        1000,
-        4000
-    ],
-    "Lymphocytes (Abs. Value)": [
-        1000,
-        4000
-    ],
-    "Monocytes (%)": [
-        2,
-        8
-    ],
-    "Monocytes (absolute)": [
-        200,
-        800
-    ],
-    "Monocytes (Abs. Value)": [
-        200,
-        800
-    ],
-    "Eosinophils (%)": [
-        1,
-        4
-    ],
-    "Eosinophils (absolute)": [
-        50,
-        400
-    ],
-    "Eosinophils (Abs. Value)": [
-        50,
-        400
-    ],
-    "Basophils (%)": [
-        0.5,
-        1
-    ],
-    "Basophils (absolute)": [
-        0,
-        200
-    ],
-    "Basophils (Abs. Value)": [
-        0,
-        200
-    ],
-    "Glucose (Fasting)": [
-        70,
-        99
-    ],
-    "Fasting Plasma Glucose": [
-        70,
-        100
-    ],
-    "Glucose (Postprandial)": [
-        70,
-        140
-    ],
-    "Postprandial Glucose": [
-        70,
-        140
-    ],
-    "Glycated Hemoglobin": [
-        4.0,
-        5.6
-    ],
-    "HbA1c":[
-        4.0,
-        5.6
-    ],
-    "Total Cholesterol": [
-        125,
-        200
-    ],
-    "HDL Cholesterol": [
-        40,
-        60
-    ],
-    "HDL": [
-        40,
-        60
-    ],
-    "LDL Cholesterol": [
-        0,
-        100
-    ],
-    "LDL": [
-        0,
-        100
-    ],
-    "Triglycerides": [
-        0,
-        150
-    ],
-    "Urea": [
-        15,
-        40
-    ],
-    "Creatinine": [
-        0.7,
-        1.3
-    ],
-    "Blood Urea Nitrogen (BUN)": [
-        7,
-        20
-    ],
-    "Uric Acid": [
-        3.5,
-        7.2
-    ],
-    "Total Protein": [
-        6.0,
-        8.3
-    ],
-    "Albumin": [
-        3.5,
-        5.0
-    ],
-    "Globulin": [
-        2.0,
-        3.5
-    ],
-    "A/G Ratio": [
-        1.0,
-        2.5
-    ],
-    "A/G":[
-        1.0,
-        2.5
-    ],
-    "Alkaline Phosphatase": [
-        44,
-        147
-    ],
-    "ALP": [
-        44,
-        147
-    ],
-    "Alanine Aminotransferase": [
-        7,
-        56
-    ],
-    "ALT": [
-        7,
-        56
-    ],
-    "Aspartate Aminotransferase": [
-        10,
-        40
-    ],
-    "AST": [
-        10,
-        40
-    ],
-    "Gamma-Glutamyl Transferase": [
-        9,
-        48
-    ],
-    "GGT": [
-        9,
-        48
-    ],
-    "Bilirubin (Total)": [
-        0.1,
-        1.2
-    ],
-    "Total Bilirubin": [
-        0.1,
-        1.2
-    ],
-    "Bilirubin (Direct)": [
-        0,
-        0.3
-    ],
-    "Direct Bilirubin": [
-        0,
-        0.3
-    ],
-    "Bilirubin (Indirect)": [
-        0.1,
-        1.0
-    ],
-    "Indirect Bilirubin": [
-        0.1,
-        1.0
-    ],
-    "Sodium (Na)": [
-        135,
-        145
-    ],
-    "Sodium": [
-        135,
-        145
-    ],
-    "Na": [
-        135,
-        145
-    ],
-    "Potassium (K)": [
-        3.5,
-        5.0
-    ],
-    "Potassium": [
-        3.5,
-        5.0
-    ],
-    "K": [
-        3.5,
-        5.0
-    ],
-    "Calcium (Ca)": [
-        8.5,
-        10.5
-    ],
-    "Calcium": [
-        8.5,
-        10.5
-    ],
-    "Ca": [
-        8.5,
-        10.5
-    ],
-    "Magnesium (Mg)": [
-        1.7,
-        2.2
-    ],
-    "Magnesium": [
-        1.7,
-        2.2
-    ],
-    "Mg": [
-        1.7,
-        2.2
-    ],
-    "Phosphorus (P)": [
-        2.5,
-        4.5
-    ],
-    "Phosphorus": [
-        2.5,
-        4.5
-    ],
-    "P": [
-        2.5,
-        4.5
-    ],
-    "Chloride (Cl)": [
-        96,
-        106
-    ],
-    "Chloride": [
-        96,
-        106
-    ],
-    "Cl": [
-        96,
-        106
-    ],
-    "Bicarbonate (HCO3)": [
-        22,
-        28
-    ],
-    "Bicarbonate": [
-        22,
-        28
-    ],
-    "HCO3": [
-        22,
-        28
-    ],
-    "Thyroid Stimulating Hormone (TSH)": [
-        0.4,
-        4.0
-    ],
-    "TSH": [
-        0.4,
-        4.0
-    ],
-    "Free T3": [
-        2.3,
-        4.1
-    ],
-    "T3": [
-        2.3,
-        4.1
-    ],
-    "Free T4": [
-        0.9,
-        1.7
-    ],
-    "T4": [
-        0.9,
-        1.7
-    ],
-    "Cortisol": [
-        6,
-        23
-    ],
-    "Insulin": [
-        2.0,
-        25
-    ],
-    "Testosterone": [
-        300,
-        1000
-    ],
-    "Estrogen (Estradiol)": [
-        10,
-        50
-    ],
-    "Estradiol": [
-        10,
-        50
-    ],
-    "Progesterone": [
-        0.2,
-        1.4
-    ],
-    "Follicle Stimulating Hormone": [
-        1,
-        12
-    ],
-    "FSH": [
-        1,
-        12
-    ],
-    "Luteinizing Hormone (LH)": [
-        1.7,
-        8.6
-    ],
-    "Prolactin": [
-        4.0,
-        15.2
-    ],
-    "C-Reactive Protein (CRP)": [
-        0,
-        3
-    ],
-    "Erythrocyte Sedimentation Rate (ESR)": [
-        0,
-        15
-    ],
-    "HIV Antibodies": [
-        "Negative"
-    ],
-    "Hepatitis B Surface Antigen (HBsAg)": [
-        "Negative"
-    ],
-    "Hepatitis C Antibodies (Anti-HCV)": [
-        "Negative"
-    ],
-    "Dengue NS1 Antigen": [
-        "Negative"
-    ],
-    "Malaria Parasite Test": [
-        "Negative"
-    ],
-    "Widal Test": [
-        "Negative"
-    ],
-    "COVID-19 PCR Test": [
-        "Negative"
-    ],
-    "Tuberculosis (TB) Gold Test": [
-        "Negative"
-    ],
-    "pH Level": [
-        4.5,
-        8.0
-    ],
-    "Specific Gravity": [
-        1.005,
-        1.03
-    ],
-    "Protein (Albumin)": [
-        0,
-        20
-    ],
-    "Glucose": [
-        "Negative"
-    ],
-    "Ketones": [
-        "Negative"
-    ],
-    "Blood (Hematuria)": [
-        "Negative"
-    ],
-    "Nitrites": [
-        "Negative"
-    ],
-    "Leukocyte Esterase": [
-        "Negative"
-    ],
-    "Bilirubin": [
-        "Negative"
-    ],
-    "Urobilinogen": [
-        0.1,
-        1.0
-    ],
-    "Total Bilirubin": [
-        0.1,
-        1.2
-    ],
-    "Direct Bilirubin": [
-        0,
-        0.3
-    ],
-    "Indirect Bilirubin": [
-        0.1,
-        1.0
-    ],
-    "GFR (Glomerular Filtration Rate)": [
-        90,
-        120
-    ],
-    "Troponin I": [
-        0,
-        0.04
-    ],
-    "Troponin T": [
-        0,
-        0.1
-    ],
-    "Creatine Kinase-MB (CK-MB)": [
-        0,
-        3.6
-    ],
-    "Myoglobin": [
-        0,
-        85
-    ],
-    "NT-proBNP": [
-        0,
-        125
-    ],
-    "Prothrombin Time (PT)": [
-        11,
-        13.5
-    ],
-    "International Normalized Ratio (INR)": [
-        0.8,
-        1.2
-    ],
-    "Activated Partial Thromboplastin Time (aPTT)": [
-        25,
-        35
-    ],
-    "D-Dimer": [
-        0,
-        0.5
-    ],
-    "Vitamin D": [
-        20,
-        50
-    ],
-    "Vitamin B12": [
-        200,
-        900
-    ],
-    "Folate": [
-        4,
-        20
-    ],
-    "Iron": [
-        60,
-        170
-    ],
-    "Ferritin": [
-        12,
-        300
-    ],
-    "Transferrin": [
-        200,
-        400
-    ],
-    "Total Iron Binding Capacity (TIBC)": [
-        240,
-        450
-    ],
-    "Blood Group and Rh Factor": [
-        "A, B, AB, O"
-    ],
-    "Rheumatoid Factor (RF)": [
-        0,
-        20
-    ],
-    "ANA (Antinuclear Antibodies)": [
-        "Negative"
-    ],
-    "Serum Amylase": [
-        23,
-        85
-    ],
-    "Serum Lipase": [
-        0,
-        160
-    ],
-    "Lactate Dehydrogenase (LDH)": [
-        140,
-        280
-    ],
-    "CEA (Carcinoembryonic Antigen)": [
-        0,
-        5
-    ],
-    "CA-125": [
-        0,
-        35
-    ],
-    "PSA (Prostate-Specific Antigen)": [
-        0,
-        4
-    ],
-    "*Hemoglobin": [
-        13.0,
-        17.0
-    ],
-    "*Hb": [
-        13.0,17.0
-    ],
-    "*Hematocrit": [
-        40.0,
-        50.0
-    ],
-    "*Hct": [
-        40.0,
-        50.0
-    ],
-    "*Red Blood Cell Count": [
-        4.5,
-        6.0
-    ],
-    "*RBC": [
-        4.5,
-        6.0
-    ],
-    "*White Blood Cell Count": [
-        4000,
-        11000
-    ],
-    "*WBC": [
-        4000,
-        11000
-    ],
-    "*Platelet Count": [
-        150000,
-        450000
-    ],
-    "*Mean Corpuscular Volume": [
-        80,
-        100
-    ],
-    "*MCV": [
-        80,
-        100
-    ],
-    "*Mean Corpuscular Hemoglobin": [
-        27,
-        31
-    ],
-"*MCH":  [
-        27,
-        31
-],
-    "*Mean Corpuscular Hemoglobin Concentration": [
-        32,
-        36
-    ],
-    "*MCHC": [
-        32,
-        36
-    ],
-    "*Red Cell Distribution Width": [
-        11.5,
-        14.5
-    ],
-    "*RDW": [
-        11.5,
-        14.5
-    ],
-    "*Neutrophils (%)": [
-        40,
-        70
-    ],
-    "*Neutrophils (absolute)": [
-        1500,
-        8000
-    ],
-    "*Neutrophils (Abs. Value)": [
-        1500,
-        8000
-    ],
-    "*Lymphocytes (%)": [
-        20,
-        40
-    ],
-    "*Lymphocytes (absolute)": [
-        1000,
-        4000
-    ],
-    "*Lymphocytes (Abs. Value)": [
-        1000,
-        4000
-    ],
-    "*Monocytes (%)": [
-        2,
-        8
-    ],
-    "*Monocytes (absolute)": [
-        200,
-        800
-    ],
-    "*Monocytes (Abs. Value)": [
-        200,
-        800
-    ],
-    "*Eosinophils (%)": [
-        1,
-        4
-    ],
-    "*Eosinophils (absolute)": [
-        50,
-        400
-    ],
-    "*Eosinophils (Abs. Value)": [
-        50,
-        400
-    ],
-    "*Basophils (%)": [
-        0.5,
-        1
-    ],
-    "*Basophils (absolute)": [
-        0,
-        200
-    ],
-    "*Basophils (Abs. Value)": [
-        0,
-        200
-    ],
-    "*Glucose (Fasting)": [
-        70,
-        99
-    ],
-    "*Fasting Plasma Glucose": [
-        70,
-        100
-    ],
-    "*Glucose (Postprandial)": [
-        70,
-        140
-    ],
-    "*Postprandial Glucose": [
-        70,
-        140
-    ],
-    "*Glycated Hemoglobin": [
-        4.0,
-        5.6
-    ],
-    "*HbA1c":[
-        4.0,
-        5.6
-    ],
-    "*Total Cholesterol": [
-        125,
-        200
-    ],
-    "*HDL Cholesterol": [
-        40,
-        60
-    ],
-    "*HDL": [
-        40,
-        60
-    ],
-    "*LDL Cholesterol": [
-        0,
-        100
-    ],
-    "*LDL": [
-        0,
-        100
-    ],
-    "*Triglycerides": [
-        0,
-        150
-    ],
-    "*Urea": [
-        15,
-        40
-    ],
-    "*Creatinine": [
-        0.7,
-        1.3
-    ],
-    "*Blood Urea Nitrogen (BUN)": [
-        7,
-        20
-    ],
-    "*Uric Acid": [
-        3.5,
-        7.2
-    ],
-    "*Total Protein": [
-        6.0,
-        8.3
-    ],
-    "*Albumin": [
-        3.5,
-        5.0
-    ],
-    "*Globulin": [
-        2.0,
-        3.5
-    ],
-    "*A/G Ratio": [
-        1.0,
-        2.5
-    ],
-    "*A/G":[
-        1.0,
-        2.5
-    ],
-    "*Alkaline Phosphatase": [
-        44,
-        147
-    ],
-    "*ALP": [
-        44,
-        147
-    ],
-    "*Alanine Aminotransferase": [
-        7,
-        56
-    ],
-    "*ALT": [
-        7,
-        56
-    ],
-    "*Aspartate Aminotransferase": [
-        10,
-        40
-    ],
-    "*AST": [
-        10,
-        40
-    ],
-    "*Gamma-Glutamyl Transferase": [
-        9,
-        48
-    ],
-    "*GGT": [
-        9,
-        48
-    ],
-    "*Bilirubin (Total)": [
-        0.1,
-        1.2
-    ],
-    "*Total Bilirubin": [
-        0.1,
-        1.2
-    ],
-    "*Bilirubin (Direct)": [
-        0,
-        0.3
-    ],
-    "*Direct Bilirubin": [
-        0,
-        0.3
-    ],
-    "*Bilirubin (Indirect)": [
-        0.1,
-        1.0
-    ],
-    "*Indirect Bilirubin": [
-        0.1,
-        1.0
-    ],
-    "*Sodium (Na)": [
-        135,
-        145
-    ],
-    "*Sodium": [
-        135,
-        145
-    ],
-    "*Na": [
-        135,
-        145
-    ],
-    "*Potassium (K)": [
-        3.5,
-        5.0
-    ],
-    "*Potassium": [
-        3.5,
-        5.0
-    ],
-    "*K": [
-        3.5,
-        5.0
-    ],
-    "*Calcium (Ca)": [
-        8.5,
-        10.5
-    ],
-    "*Calcium": [
-        8.5,
-        10.5
-    ],
-    "*Ca": [
-        8.5,
-        10.5
-    ],
-    "*Magnesium (Mg)": [
-        1.7,
-        2.2
-    ],
-    "*Magnesium": [
-        1.7,
-        2.2
-    ],
-    "*Mg": [
-        1.7,
-        2.2
-    ],
-    "*Phosphorus (P)": [
-        2.5,
-        4.5
-    ],
-    "*Phosphorus": [
-        2.5,
-        4.5
-    ],
-    "P": [
-        2.5,
-        4.5
-    ],
-    "*Chloride (Cl)": [
-        96,
-        106
-    ],
-    "*Chloride": [
-        96,
-        106
-    ],
-    "*Cl": [
-        96,
-        106
-    ],
-    "*Bicarbonate (HCO3)": [
-        22,
-        28
-    ],
-    "*Bicarbonate": [
-        22,
-        28
-    ],
-    "*HCO3": [
-        22,
-        28
-    ],
-    "*Thyroid Stimulating Hormone (TSH)": [
-        0.4,
-        4.0
-    ],
-    "*TSH": [
-        0.4,
-        4.0
-    ],
-    "*Free T3": [
-        2.3,
-        4.1
-    ],
-    "*T3": [
-        2.3,
-        4.1
-    ],
-    "*Free T4": [
-        0.9,
-        1.7
-    ],
-    "*T4": [
-        0.9,
-        1.7
-    ],
-    "*Cortisol": [
-        6,
-        23
-    ],
-    "*Insulin": [
-        2.0,
-        25
-    ],
-    "*Testosterone": [
-        300,
-        1000
-    ],
-    "*Estrogen (Estradiol)": [
-        10,
-        50
-    ],
-    "*Estradiol": [
-        10,
-        50
-    ],
-    "*Progesterone": [
-        0.2,
-        1.4
-    ],
-    "*Follicle Stimulating Hormone": [
-        1,
-        12
-    ],
-    "*FSH": [
-        1,
-        12
-    ],
-    "*Luteinizing Hormone (LH)": [
-        1.7,
-        8.6
-    ],
-    "*Prolactin": [
-        4.0,
-        15.2
-    ],
-    "*C-Reactive Protein (CRP)": [
-        0,
-        3
-    ],
-    "*Erythrocyte Sedimentation Rate (ESR)": [
-        0,
-        15
-    ],
-    "*HIV Antibodies": [
-        "Negative"
-    ],
-    "*Hepatitis B Surface Antigen (HBsAg)": [
-        "Negative"
-    ],
-    "*Hepatitis C Antibodies (Anti-HCV)": [
-        "Negative"
-    ],
-    "*Dengue NS1 Antigen": [
-        "Negative"
-    ],
-    "*Malaria Parasite Test": [
-        "Negative"
-    ],
-    "*Widal Test": [
-        "Negative"
-    ],
-    "*COVID-19 PCR Test": [
-        "Negative"
-    ],
-    "*Tuberculosis (TB) Gold Test": [
-        "Negative"
-    ],
-    "*pH Level": [
-        4.5,
-        8.0
-    ],
-    "*Specific Gravity": [
-        1.005,
-        1.03
-    ],
-    "*Protein (Albumin)": [
-        0,
-        20
-    ],
-    "*Glucose": [
-        "Negative"
-    ],
-    "*Ketones": [
-        "Negative"
-    ],
-    "*Blood (Hematuria)": [
-        "Negative"
-    ],
-    "*Nitrites": [
-        "Negative"
-    ],
-    "*Leukocyte Esterase": [
-        "Negative"
-    ],
-    "*Bilirubin": [
-        "Negative"
-    ],
-    "*Urobilinogen": [
-        0.1,
-        1.0
-    ],
-    "*Total Bilirubin": [
-        0.1,
-        1.2
-    ],
-    "*Direct Bilirubin": [
-        0,
-        0.3
-    ],
-    "*Indirect Bilirubin": [
-        0.1,
-        1.0
-    ],
-    "*GFR (Glomerular Filtration Rate)": [
-        90,
-        120
-    ],
-    "*Troponin I": [
-        0,
-        0.04
-    ],
-    "*Troponin T": [
-        0,
-        0.1
-    ],
-    "*Creatine Kinase-MB (CK-MB)": [
-        0,
-        3.6
-    ],
-    "*Myoglobin": [
-        0,
-        85
-    ],
-    "*NT-proBNP": [
-        0,
-        125
-    ],
-    "*Prothrombin Time (PT)": [
-        11,
-        13.5
-    ],
-    "*International Normalized Ratio (INR)": [
-        0.8,
-        1.2
-    ],
-    "*Activated Partial Thromboplastin Time (aPTT)": [
-        25,
-        35
-    ],
-    "*D-Dimer": [
-        0,
-        0.5
-    ],
-    "*Vitamin D": [
-        20,
-        50
-    ],
-    "*Vitamin B12": [
-        200,
-        900
-    ],
-    "*Folate": [
-        4,
-        20
-    ],
-    "*Iron": [
-        60,
-        170
-    ],
-    "*Ferritin": [
-        12,
-        300
-    ],
-    "*Transferrin": [
-        200,
-        400
-    ],
-    "*Total Iron Binding Capacity (TIBC)": [
-        240,
-        450
-    ],
-    "*Blood Group and Rh Factor": [
-        "A, B, AB, O"
-    ],
-    "*Rheumatoid Factor (RF)": [
-        0,
-        20
-    ],
-    "*ANA (Antinuclear Antibodies)": [
-        "Negative"
-    ],
-    "*Serum Amylase": [
-        23,
-        85
-    ],
-    "*Serum Lipase": [
-        0,
-        160
-    ],
-    "*Lactate Dehydrogenase (LDH)": [
-        140,
-        280
-    ],
-    "*CEA (Carcinoembryonic Antigen)": [
-        0,
-        5
-    ],
-    "*CA-125": [
-        0,
-        35
-    ],
-    "*PSA (Prostate-Specific Antigen)": [
-        0,
-        4
-    ]
+    "Hemoglobin": {
+        "Male": [13.8, 17.2],
+        "Female": [12.1, 15.1],
+        "unit": "g/dL"
+    },
+    "White Blood Cell Count (WBC)": {
+        "Male": [4.5, 11.0],
+        "Female": [4.5, 11.0],
+        "unit": "10^3/μL"
+    },
+    "Red Blood Cell Count (RBC)": {
+        "Male": [4.7, 6.1],
+        "Female": [4.2, 5.4],
+        "unit": "10^6/μL"
+    },
+    "Platelet Count": {
+        "Male": [150, 450],
+        "Female": [150, 450],
+        "unit": "10^3/μL"
+    },
+    "Hematocrit": {
+        "Male": [40.7, 50.3],
+        "Female": [36.1, 44.3],
+        "unit": "%"
+    },
+    "Mean Corpuscular Volume (MCV)": {
+        "Male": [80, 100],
+        "Female": [80, 100],
+        "unit": "fL"
+    },
+    "Mean Corpuscular Hemoglobin (MCH)": {
+        "Male": [27, 34],
+        "Female": [27, 34],
+        "unit": "pg"
+    },
+    "Mean Corpuscular Hemoglobin Concentration (MCHC)": {
+        "Male": [32, 36],
+        "Female": [32, 36],
+        "unit": "g/dL"
+    },
+    "Red Cell Distribution Width (RDW)": {
+        "Male": [11.5, 14.5],
+        "Female": [11.5, 14.5],
+        "unit": "%"
+    },
+    "Fasting Glucose": {
+        "Male": [70, 100],
+        "Female": [70, 100],
+        "unit": "mg/dL"
+    },
+    "Total Cholesterol": {
+        "Male": [125, 200],
+        "Female": [125, 200],
+        "unit": "mg/dL"
+    },
+    "HDL Cholesterol": {
+        "Male": [40, 60],
+        "Female": [50, 60],
+        "unit": "mg/dL"
+    },
+    "LDL Cholesterol": {
+        "Male": [0, 100],
+        "Female": [0, 100],
+        "unit": "mg/dL"
+    },
+    "Triglycerides": {
+        "Male": [0, 150],
+        "Female": [0, 150],
+        "unit": "mg/dL"
+    },
+    "Sodium (Na)": {
+        "Male": [135, 145],
+        "Female": [135, 145],
+        "unit": "mmol/L"
+    },
+    "Potassium (K)": {
+        "Male": [3.5, 5.2],
+        "Female": [3.5, 5.2],
+        "unit": "mmol/L"
+    },
+    "Chloride (Cl)": {
+        "Male": [98, 107],
+        "Female": [98, 107],
+        "unit": "mmol/L"
+    },
+    "Carbon Dioxide (CO2)": {
+        "Male": [22, 29],
+        "Female": [22, 29],
+        "unit": "mmol/L"
+    },
+    "Blood Urea Nitrogen (BUN)": {
+        "Male": [7, 20],
+        "Female": [7, 20],
+        "unit": "mg/dL"
+    },
+    "Creatinine": {
+        "Male": [0.6, 1.2],
+        "Female": [0.5, 1.1],
+        "unit": "mg/dL"
+    },
+    "Calcium (Ca)": {
+        "Male": [8.5, 10.2],
+        "Female": [8.5, 10.2],
+        "unit": "mg/dL"
+    },
+    "Alkaline Phosphatase (ALP)": {
+        "Male": [44, 147],
+        "Female": [44, 147],
+        "unit": "U/L"
+    },
+    "Alanine Aminotransferase (ALT)": {
+        "Male": [7, 55],
+        "Female": [7, 55],
+        "unit": "U/L"
+    },
+    "Aspartate Aminotransferase (AST)": {
+        "Male": [8, 48],
+        "Female": [8, 48],
+        "unit": "U/L"
+    },
+    "Bilirubin, Total": {
+        "Male": [0.1, 1.2],
+        "Female": [0.1, 1.2],
+        "unit": "mg/dL"
+    },
+    "Albumin": {
+        "Male": [3.5, 5.0],
+        "Female": [3.5, 5.0],
+        "unit": "g/dL"
+    },
+    "Total Protein": {
+        "Male": [6.0, 8.3],
+        "Female": [6.0, 8.3],
+        "unit": "g/dL"
+    },
+    "Globulin": {
+        "Male": [2.0, 3.5],
+        "Female": [2.0, 3.5],
+        "unit": "g/dL"
+    },
+    "A/G Ratio": {
+        "Male": [1.0, 2.0],
+        "Female": [1.0, 2.0],
+        "unit": "ratio"
+    },
+    "Thyroid Stimulating Hormone (TSH)": {
+        "Male": [0.4, 4.0],
+        "Female": [0.4, 4.0],
+        "unit": "μIU/mL"
+    },
+    "Free Thyroxine (Free T4)": {
+        "Male": [0.8, 1.8],
+        "Female": [0.8, 1.8],
+        "unit": "ng/dL"
+    },
+    "Free Triiodothyronine (Free T3)": {
+        "Male": [2.3, 4.2],
+        "Female": [2.3, 4.2],
+        "unit": "pg/mL"
+    },
+    "Vitamin D, 25-Hydroxy": {
+        "Male": [30, 100],
+        "Female": [30, 100],
+        "unit": "ng/mL"
+    },
+    "Iron": {
+        "Male": [60, 170],
+        "Female": [60, 170],
+        "unit": "μg/dL"
+    },
+    "Total Iron Binding Capacity (TIBC)": {
+        "Male": [240, 450],
+        "Female": [240, 450],
+        "unit": "μg/dL"
+    },
+    "Ferritin": {
+        "Male": [20, 500],
+        "Female": [20, 500],
+        "unit": "ng/mL"
+    },
+    "Uric Acid": {
+        "Male": [3.4, 7.0],
+        "Female": [2.4, 6.0],
+        "unit": "mg/dL"
+    },
+    "C-Reactive Protein (CRP)": {
+        "Male": [0, 1.0],
+        "Female": [0, 1.0],
+        "unit": "mg/dL"
+    },
+    "Erythrocyte Sedimentation Rate (ESR)": {
+        "Male": [0, 22],
+        "Female": [0, 29],
+        "unit": "mm/hr"
+    },
+    "Prothrombin Time (PT)": {
+        "Male": [11, 13.5],
+        "Female": [11, 13.5],
+        "unit": "seconds"
+    },
+    "International Normalized Ratio (INR)": {
+        "Male": [0.8, 1.2],
+        "Female": [0.8, 1.2],
+        "unit": "ratio"
+    },
+    "Partial Thromboplastin Time (PTT)": {
+        "Male": [25, 35],
+        "Female": [25, 35],
+        "unit": "seconds"
+    },
+    "D-Dimer": {
+        "Male": [0, 0.5],
+        "Female": [0, 0.5],
+        "unit": "μg/mL"
+    },
+    "Troponin I": {
+        "Male": [0, 0.04],
+        "Female": [0, 0.04],
+        "unit": "ng/mL"
+    },
+    "Brain Natriuretic Peptide (BNP)": {
+        "Male": [0, 100],
+        "Female": [0, 100],
+        "unit": "pg/mL"
+    },
+    "Prostate-Specific Antigen (PSA)": {
+        "Male": [0, 4.0],
+        "Female": null,
+        "unit": "ng/mL"
+    },
+    "Human Chorionic Gonadotropin (hCG)": {
+        "Male": [0, 5],
+        "Female": [0, 5],
+        "unit": "mIU/mL"
+    },
+    "HIV Antibody": {
+        "Male": ["Negative"],
+        "Female": ["Negative"],
+        "unit": null
+    },
+    "Hepatitis B Surface Antigen (HBsAg)": {
+        "Male": ["Negative"],
+        "Female": ["Negative"],
+        "unit": null
+    },
+    "Hepatitis C Antibody": {
+        "Male": ["Negative"],
+        "Female": ["Negative"],
+        "unit": null
+    },
+    "Rheumatoid Factor (RF)": {
+        "Male": [0, 14],
+        "Female": [0, 14],
+        "unit": "IU/mL"
+    },
+    "Anti-Nuclear Antibody (ANA)": {
+        "Male": ["Negative"],
+        "Female": ["Negative"],
+        "unit": null
+    },
+    "Magnesium (Mg)": {
+        "Male": [1.7, 2.2],
+        "Female": [1.7, 2.2],
+        "unit": "mg/dL"
+    },
+    "Phosphorus (P)": {
+        "Male": [2.5, 4.5],
+        "Female": [2.5, 4.5],
+        "unit": "mg/dL"
+    },
+    "Lactate Dehydrogenase (LDH)": {
+        "Male": [140, 280],
+        "Female": [140, 280],
+        "unit": "U/L"
+    },
+    "Amylase": {
+        "Male": [30, 110],
+        "Female": [30, 110],
+        "unit": "U/L"
+    },
+    "Lipase": {
+        "Male": [13, 60],
+        "Female": [13, 60],
+        "unit": "U/L"
+    },
+    "Creatine Kinase (CK)": {
+        "Male": [55, 170],
+        "Female": [30, 135],
+        "unit": "U/L"
+    },
+    "Cortisol": {
+        "Male": [6, 23],
+        "Female": [6, 23],
+        "unit": "μg/dL"
+    },
+    "Estradiol": {
+        "Male": [10, 50],
+        "Female": [30, 400],
+        "unit": "pg/mL"
+    },
+    "Testosterone": {
+        "Male": [300, 1000],
+        "Female": [15, 70],
+        "unit": "ng/dL"
+    },
+    "Prolactin": {
+        "Male": [2, 18],
+        "Female": [2, 29],
+        "unit": "ng/mL"
+    },
+    "Follicle-Stimulating Hormone (FSH)": {
+        "Male": [1.5, 12.4],
+        "Female": [3.5, 12.5],
+        "unit": "mIU/mL"
+    },
+    "Luteinizing Hormone (LH)": {
+        "Male": [1.7, 8.6],
+        "Female": [2.4, 12.6],
+        "unit": "mIU/mL"
+    },
+    "Insulin": {
+        "Male": [2.6, 24.9],
+        "Female": [2.6, 24.9],
+        "unit": "μIU/mL"
+    },
+    "Hemoglobin A1c (HbA1c)": {
+        "Male": [4.0, 5.6],
+        "Female": [4.0, 5.6],
+        "unit": "%"
+    },
+    "Vitamin B12": {
+        "Male": [200, 900],
+        "Female": [200, 900],
+        "unit": "pg/mL"
+    },
+    "Folate": {
+        "Male": [2.7, 17.0],
+        "Female": [2.7, 17.0],
+        "unit": "ng/mL"
+    },
+    "Zinc": {
+        "Male": [70, 120],
+        "Female": [70, 120],
+        "unit": "μg/dL"
+    },
+    "Copper": {
+        "Male": [70, 140],
+        "Female": [70, 140],
+        "unit": "μg/dL"
+    },
+    "Lead": {
+        "Male": [0, 5],
+        "Female": [0, 5],
+        "unit": "μg/dL"
+    },
+    "Mercury": {
+        "Male": [0, 10],
+        "Female": [0, 10],
+        "unit": "μg/L"
+    },
+    "Arsenic": {
+        "Male": [0, 15],
+        "Female": [0, 15],
+        "unit": "μg/L"
+    },
+    "Cadmium": {
+        "Male": [0, 5],
+        "Female": [0, 5],
+        "unit": "μg/L"
+    }
 }

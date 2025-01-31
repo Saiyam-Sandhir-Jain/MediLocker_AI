@@ -1,0 +1,135 @@
+{% extends 'web_portal/base.html' %}
+{% load static %}
+
+{% block title %}MediLocker AI - Pricing | MediLocker{% endblock %}
+
+{% block content %}
+
+<!-- Pricing Section -->
+<section class="bg-gradient-to-b from-black to-[#1D1E20] pt-20 pb-20 px-10">
+    <div class="max-w-7xl mx-auto lg:px-4 md:px-2 sm:px-1 text-center">
+        <h2 class="text-5xl font-bold text-white">Pricing Plans</h2>
+        <p class="mt-6 mb-12 text-lg text-gray-400 px-10">
+            Choose the plan that best suits your needs. Our services are designed to provide flexibility and value.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Basic Plan Card -->
+            <div class="bg-white rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 w-full border-white border-2">
+                <div class="p-6">
+                    <h3 class="text-3xl font-semibold text-[#0F1746]">Basic</h3>
+                    <p class="text-gray-400 mt-4 line-clamp-3">
+                        Perfect for individuals who want to explore our free services.
+                    </p>
+                    <h1 class="text-4xl font-bold text-[#0F1746] mt-6">₹0</h1>
+                    <ul class="mt-6 space-y-2 text-gray-400">
+                        <li>Free to use</li>
+                        <li>Access to basic features</li>
+                        <li>Community support</li>
+                    </ul>
+                    <a href="{% url 'home' %}" class="mt-6 inline-block bg-[#0F1746] text-white py-2 px-6 rounded-full text-md hover:bg-indigo-400">
+                        Get Started &nearrow;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pro Plan Card -->
+            <div class="bg-white rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 w-full border-2 border-[#FFD700]">
+                <div class="p-6">
+                    <h3 class="text-3xl font-semibold text-[#0F1746]">Pro</h3>
+                    <p class="text-gray-400 mt-4 line-clamp-3">
+                        Ideal for professionals who need advanced features and priority support.
+                    </p>
+                    <h1 class="text-4xl font-bold text-[#0F1746] mt-6">₹249/month</h1>
+                    <ul class="mt-6 space-y-2 text-gray-400">
+                        <li>API access</li>
+                        <li>Priority support</li>
+                        <li>Advanced analytics</li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block bg-[#0F1746] text-white py-2 px-6 rounded-full text-md hover:bg-indigo-400">
+                        Subscribe &nearrow;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Enterprise Plan Card -->
+            <div class="bg-white rounded-3xl overflow-hidden transform transition duration-300 hover:scale-105 w-full border-white border-2">
+                <div class="p-6">
+                    <h3 class="text-3xl font-semibold text-[#0F1746]">Enterprise</h3>
+                    <p class="text-gray-400 mt-4 line-clamp-3">
+                        Tailored solutions for businesses with custom requirements.
+                    </p>
+                    <h1 class="text-4xl font-bold text-[#0F1746] mt-6">Custom</h1>
+                    <ul class="mt-6 space-y-2 text-gray-400">
+                        <li>Custom API usage</li>
+                        <li>Dedicated support</li>
+                        <li>Custom integrations</li>
+                    </ul>
+                    <a href="#" class="mt-6 inline-block bg-[#0F1746] text-white py-2 px-6 rounded-full text-md hover:bg-indigo-400">
+                        Contact Us &nearrow;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="bg-black py-20 px-10">
+    <div class="max-w-7xl mx-auto lg:px-4 md:px-2 sm:px-1 text-center">
+        <h2 class="text-4xl font-bold text-white mb-8">Frequently Asked Questions</h2>
+        <p class="text-gray-400 mb-12">
+            Have questions? We’ve got answers. Check out our FAQ below.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-3xl p-6">
+                <h3 class="text-xl font-semibold text-[#0F1746]">What’s included in the Pro plan?</h3>
+                <p class="text-gray-400 mt-2">
+                    The Pro plan includes API access, priority support, and advanced analytics. It’s perfect for professionals who need more robust features.
+                </p>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-3xl p-6">
+                <h3 class="text-xl font-semibold text-[#0F1746]">Can I switch plans later?</h3>
+                <p class="text-gray-400 mt-2">
+                    Yes, you can upgrade or downgrade your plan at any time. Your billing will be adjusted accordingly.
+                </p>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-3xl p-6">
+                <h3 class="text-xl font-semibold text-[#0F1746]">Is there a free trial for the Pro plan?</h3>
+                <p class="text-gray-400 mt-2">
+                    We don’t offer a free trial for the Pro plan, but you can start with the Basic plan to explore our services.
+                </p>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-3xl p-6">
+                <h3 class="text-xl font-semibold text-[#0F1746]">How do I cancel my subscription?</h3>
+                <p class="text-gray-400 mt-2">
+                    You can cancel your subscription at any time from your account settings. No hidden fees or penalties.
+                </p>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white rounded-3xl p-6">
+                <h3 class="text-xl font-semibold text-[#0F1746]">What payment methods do you accept?</h3>
+                <p class="text-gray-400 mt-2">
+                    We accept all major credit/debit cards, UPI, and net banking. Payments are processed securely via Razorpay.
+                </p>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="bg-white rounded-3xl p-6">
+                <h3 class="text-xl font-semibold text-[#0F1746]">Do you offer discounts for nonprofits?</h3>
+                <p class="text-gray-400 mt-2">
+                    Yes, we offer special discounts for nonprofits and educational institutions. Contact us for more details.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
