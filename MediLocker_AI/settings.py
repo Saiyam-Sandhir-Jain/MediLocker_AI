@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'web_portal',
     'chatbot',
     'report_reader',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
