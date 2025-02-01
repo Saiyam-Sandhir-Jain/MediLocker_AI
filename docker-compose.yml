@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    container_name: medilocker-web
+    container_name: medilockerai-web
     volumes:
       - .:/code
     ports:
@@ -10,21 +10,21 @@ services:
       - db
     environment:
       DJANGO_DB_HOST: "db"
-      DJANGO_DB_NAME: "medilocker_db"
-      DJANGO_DB_USER: "medilocker_user"
-      DJANGO_DB_PASSWORD: "medilockerpass"
+      DJANGO_DB_NAME: "medilockerai_db"
+      DJANGO_DB_USER: "medilockerai_user"
+      DJANGO_DB_PASSWORD: "medilockeraipass"
 
   db:
     image: postgres:latest
-    container_name: medilocker-postgres
+    container_name: medilockerai-postgres
     environment:
-      POSTGRES_USER: "medilocker_user"
+      POSTGRES_USER: "medilockerai_user"
       POSTGRES_PASSWORD: "medilockerpass"
-      POSTGRES_DB: "medilocker_db"
+      POSTGRES_DB: "medilockerai_db"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - medilockerai_postgres_data:/var/lib/postgresql/data
     ports:
       - "5433:5432"
 
 volumes:
-  postgres_data:
+  medilockerai_postgres_data:
