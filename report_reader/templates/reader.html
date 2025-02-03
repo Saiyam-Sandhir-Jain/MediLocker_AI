@@ -52,6 +52,11 @@
                         <li class="mb-2">
                             <strong>{{ metric }}:</strong> {{ details.value }} 
                             (Normal Range: {{ details.range.low }} - {{ details.range.high }})
+                            <br>
+                            <span class="text-sm text-red-600">This value is {{ details.status }}.</span>
+                            <br>
+                            <a href="{{ details.link }}" target="_blank" class="text-sm text-blue-600 hover:underline">Learn more about {{ details.status }} {{ metric }} &nearr;
+                            </a>
                         </li>
                     {% endfor %}
                 </ul>

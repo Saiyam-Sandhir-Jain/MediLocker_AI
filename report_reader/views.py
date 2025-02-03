@@ -23,9 +23,9 @@ def parse_lab_report(text, reference_ranges):
         match = re.search(pattern, text, re.IGNORECASE)
         if match:
             try:
-                metrics[metric] = float(match.group(1))  # Attempt to convert to a float
+                metrics[metric] = float(match.group(1)) 
             except ValueError:
-                continue  # If the value cannot be converted, skip it
+                continue 
     return metrics
 
 def analyze_results(metrics, reference_ranges, gender='Female'):
@@ -35,29 +35,38 @@ def analyze_results(metrics, reference_ranges, gender='Female'):
         try:
             value = float(value)  
         except ValueError:
-            pass  # Keep the original value if it's not a number
+            pass 
         
         normalized_metric = normalize_metric_name(metric, reference_ranges)
         if normalized_metric:
             ranges = reference_ranges[normalized_metric]
 
-            # Handle string-based test results (e.g., "Negative", "Positive")
             if isinstance(ranges, list) and isinstance(ranges[0], str):
                 if value not in ranges:  
                     abnormal_metrics[metric] = {"value": value, "expected": ranges}
-                continue  # Skip further numeric analysis for these tests
+                continue
 
             if isinstance(ranges, dict) and gender in ranges:
                 normal_range = ranges[gender]
             else:
-                normal_range = ranges  # Assume a general range
+                normal_range = ranges 
 
             if isinstance(normal_range, list) and len(normal_range) == 2:
-                if not (normal_range[0] <= value <= normal_range[1]):
-                    abnormal_metrics[metric] = {
-                        'value': value,
-                        'range': {'low': normal_range[0], 'high': normal_range[1]}
-                    }
+                if value < normal_range[0]:
+                    status = "Low"
+                    link = f"https://www.ncbi.nlm.nih.gov/search/?term=Low+{normalized_metric}"
+                elif value > normal_range[1]:
+                    status = "High"
+                    link = f"https://www.ncbi.nlm.nih.gov/search/?term=High+{normalized_metric}"
+                else:
+                    continue
+
+                abnormal_metrics[metric] = {
+                    'value': value,
+                    'range': {'low': normal_range[0], 'high': normal_range[1]},
+                    'status': status,
+                    'link': link
+                }
 
     return abnormal_metrics
 
