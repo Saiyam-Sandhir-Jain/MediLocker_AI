@@ -69,9 +69,9 @@ WSGI_APPLICATION = 'MediLocker_AI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DJANGO_DB_NAME', 'default_db'),
-        'USER': os.getenv('DJANGO_DB_USER', 'default_user'),
-        'PASSWORD': os.getenv('DJANGO_DB_PASSWORD', 'default_password'),
+        'NAME': os.getenv('DJANGO_DB_NAME', 'medilockerai_db'),
+        'USER': os.getenv('DJANGO_DB_USER', 'medilockerai_user'),
+        'PASSWORD': os.getenv('DJANGO_DB_PASSWORD', 'medilockeraipass'),
         'HOST': os.getenv('DJANGO_DB_HOST', 'db'),
         'PORT': os.getenv('DJANGO_DB_PORT', '5432'),
     }

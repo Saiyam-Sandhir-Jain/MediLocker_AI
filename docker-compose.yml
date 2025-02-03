@@ -19,7 +19,7 @@ services:
     container_name: medilockerai-postgres
     environment:
       POSTGRES_USER: "medilockerai_user"
-      POSTGRES_PASSWORD: "medilockerpass"
+      POSTGRES_PASSWORD: "medilockeraipass"
       POSTGRES_DB: "medilockerai_db"
     volumes:
       - medilockerai_postgres_data:/var/lib/postgresql/data
