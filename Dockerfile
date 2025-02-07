@@ -8,7 +8,7 @@ WORKDIR /code
 
 # Install dependencies
 COPY requirements.txt /code/
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt && python3 -m spacy download en_core_web_sm
 
 # Copy the Django project to the container
 COPY . /code/
@@ -17,4 +17,4 @@ COPY . /code/
 EXPOSE 8000
 
 # Run the Djago project for development
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000", "--insecure"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]

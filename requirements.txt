@@ -4,3 +4,9 @@ pdfplumber
 pypdf2
 djangorestframework
 razorpay
+numpy
+nltk
+spacy
+joblib
+pandas
+scikit_learn

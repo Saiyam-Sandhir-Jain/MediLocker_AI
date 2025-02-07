@@ -12,4 +12,5 @@ urlpatterns = [
     path('', include('web_portal.urls')),
     path('web_portal/', include('web_portal.urls')),
     path('report_reader/', include('report_reader.urls')),
+    path('chatbot/', include('chatbot.urls')),
 ]
