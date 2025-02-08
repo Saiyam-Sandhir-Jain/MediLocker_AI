@@ -13,8 +13,8 @@ RUN pip3 install --no-cache-dir -r requirements.txt && python3 -m spacy download
 # Copy the Django project to the container
 COPY . /code/
 
-# Expose the port for the Django project to run on
-EXPOSE 8000
+# Expose ports
+EXPOSE 8000 5000
 
-# Run the Djago project for development
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+# Run both Django and Flask using a process manager
+CMD ["sh", "-c", "python3 manage.py runserver 0.0.0.0:8000 & python3 chatbot/app.py"]

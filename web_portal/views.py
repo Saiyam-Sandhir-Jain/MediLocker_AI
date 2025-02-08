@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import FeedbackForm
 from django.contrib import messages
 
@@ -57,3 +57,6 @@ def pricing(request):
         },
     ]
     return render(request, 'web_portal/pricing.html', {'pricing_plans': pricing_plans})
+
+def chatbot(request):
+    return redirect("http://localhost:5000")

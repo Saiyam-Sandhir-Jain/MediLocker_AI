@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'web_portal',
-    'chatbot',
     'report_reader',
     'rest_framework',
 ]

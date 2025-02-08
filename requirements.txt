@@ -4,9 +4,10 @@ pdfplumber
 pypdf2
 djangorestframework
 razorpay
+spacy
 numpy
 nltk
-spacy
 joblib
 pandas
+Flask
 scikit_learn
