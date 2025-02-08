@@ -35,7 +35,7 @@ Here’s a quick look at MediLocker_AI in action:
 
 ### 📺 Demo Video
 
-
+https://github.com/user-attachments/assets/d94e87d5-12c0-4376-bdc2-9bc496fd4ee9
 
 ## 📖 Table of Contents
 
