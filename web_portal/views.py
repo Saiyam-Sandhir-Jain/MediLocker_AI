@@ -60,3 +60,6 @@ def pricing(request):
 
 def chatbot(request):
     return redirect("http://localhost:5000")
+
+def learn_more_about_services(request):
+    return redirect("https://github.com/Saiyam-Sandhir-Jain/MediLocker_AI/tree/main?tab=readme-ov-file#medilocker_ai")
