@@ -15,15 +15,23 @@ Here’s a quick look at MediLocker_AI in action:
 
 ### 🌐 Web Portal
 
+![Screenshot From 2025-02-08 23-03-59](https://github.com/user-attachments/assets/b6bd601d-94a6-4f5d-84b9-97a9abc9064d)
 
+![Screenshot From 2025-02-08 23-04-21](https://github.com/user-attachments/assets/5a47cc27-0131-4a0d-8716-1d4e48c5ee12)
+
+![Screenshot From 2025-02-08 23-06-05](https://github.com/user-attachments/assets/90ed637b-fe2a-491b-8116-724e307d79d9)
+
+![Screenshot From 2025-02-08 23-06-15](https://github.com/user-attachments/assets/0434d290-1613-4f54-a580-5421fb13af06)
 
 ### 🤖 AI Chatbot
 
-
+![Screenshot From 2025-02-08 02-16-42](https://github.com/user-attachments/assets/80adba4c-8929-48bd-9373-f26ff540fd46)
 
 ### 📄 Report Analysis System
 
+![Screenshot From 2025-02-08 23-08-30](https://github.com/user-attachments/assets/651d0c9f-e00d-46d0-9af5-fc6c1e3325db)
 
+![Screenshot From 2025-02-08 23-08-44](https://github.com/user-attachments/assets/c27ca708-4d6c-49dd-8050-e16b6331b383)
 
 ### 📺 Demo Video
 
@@ -35,12 +43,12 @@ Here’s a quick look at MediLocker_AI in action:
 - [🚀 Features](#-features)
 - [🏗️ Architecture & Components](#️-architecture--components)
 - [🛠 Installation](#-installation)
-  - [📌 Prerequisites](#-prerequisites)
-  - [🐳 Setup via Docker (Recommended)](#-setup-via-docker-recommended)
-  - [⚙️ Manual Setup (Without Docker)](#️-manual-setup-without-docker)
+  - 📌 Prerequisites
+  - 🐳 Setup via Docker (Recommended)
+  - ⚙️ Manual Setup (Without Docker)
 - [🚀 Usage](#-usage)
-  - [🌍 Accessing Services](#-accessing-services)
-  - [📡 API Example](#-api-example)
+  - 🌍 Accessing Services
+  - 📡 API Example
 - [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 - [📩 Contact](#-contact)
@@ -77,15 +85,19 @@ MediLocker_AI/
 ├── chatbot/              # AI-powered symptom checker (Flask)
 │   ├── model/            # Machine learning models (KNN, etc.)
 │   ├── Medical_dataset/  # Training data
-│   └── app.py            # Main Flask server
+│   ├── app.py            # Main Flask server
+|   └─ ...
 ├── report_reader/        # Medical PDF analysis service
 │   ├── api.py            # REST API for report analysis
-│   └── static/           # Reference ranges
+│   ├── static/           # Reference ranges
+|   └─ ...
 ├── web_portal/           # Django web interface
 │   ├── templates/        # HTML UI templates
-│   └── models.py         # Feedback & user data models
+│   ├── models.py         # Feedback & user data models
+|   └─ ...
 └── MediLocker_AI/        # Django settings & configuration
-    └── settings.py       # Project settings (PostgreSQL, static files, etc.)
+    ├─ settings.py       # Project settings (PostgreSQL, static files, etc.)
+    └─ ...
 ```
 This modular architecture ensures each component can evolve independently.
 
