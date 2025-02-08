@@ -1,3 +1,5 @@
+{% load static %}
+
 <footer class="bg-[#000815] text-white">
     <div class="max-w-7xl mx-auto px-4 py-10">
         <div class="flex flex-col md:flex-row justify-between items-center">
@@ -6,9 +8,9 @@
                 <p class="text-gray-400">Your trusted partner in healthcare technology.</p>
             </div>
             <div class="flex space-x-6 mb-6 md:mb-0">
-                <a href="#" class="hover:text-indigo-400">Privacy Policy</a>
-                <a href="#" class="hover:text-indigo-400">Terms of Service</a>
-                <a href="#" class="hover:text-indigo-400">Contact Us</a>
+                <a href="{% static 'web_portal/pdfs/Privacy Policy.pdf' %}" class="hover:text-indigo-400">Privacy Policy</a>
+                <a href="{% static 'web_portal/pdfs/Terms of Service.pdf' %}" class="hover:text-indigo-400">Terms of Service</a>
+                <a href="mailto:saiyam.sandhir.jain@example.com" class="hover:text-indigo-400">Contact Us</a>
             </div>
         </div>
         <div class="text-center mt-6">
